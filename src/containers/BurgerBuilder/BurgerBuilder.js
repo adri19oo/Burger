@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Aux from '../../hoc/Aux';
+import Wrap from '../../helpers/Wrap';
 import Burger from '../../components/Burger';
 
 class BugerBuilder extends Component {
@@ -15,10 +15,10 @@ class BugerBuilder extends Component {
     render() {
         const {ingredients} = this.state
         return(
-            <Aux>
+            <Wrap>
                 <Burger ingredients={ingredients}/>
                 <div>Build Controls</div>                
-            </Aux>
+            </Wrap>
             
         );
     }
