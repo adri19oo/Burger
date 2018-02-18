@@ -1,12 +1,14 @@
 import React from 'react';
-import Aux from '../../hoc/Aux';
+import Wrap from '../../helpers/Wrap';
 import styles from './Layout.css';
 
 const layout = (props) => (
-    <Aux>
+    <Wrap>
         <div>Layout</div>
-        <main className={styles.Content}>{props.children}</main>
-    </Aux>
+        <main className={styles.Content}>
+            {props.children}
+        </main>
+    </Wrap>
 );
 
 export default layout;
